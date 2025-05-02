@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thống Kê</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Thống Kê Doanh Thu và Sản Phẩm</h2>
+
+        <!-- Tổng doanh thu -->
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Tổng Doanh Thu</h5>
+                <p id="total-revenue" class="card-text">Loading...</p>
+            </div>
+        </div>
+
+        <!-- Bảng thống kê số lượng sản phẩm -->
+        <div class="mt-5">
+            <h5 class="text-center">Chi Tiết Số Lượng và Doanh Thu Sản Phẩm</h5>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Số Lượng</th>
+                        <th>Tổng Doanh Thu</th>
+                    </tr>
+                </thead>
+                <tbody id="product-summary-body">
+                    <!-- Nội dung sẽ được thêm bởi JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="js/statistics.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fp-growth/dist/fpgrowth.min.js"></script>
+</body>
+
+</html>
